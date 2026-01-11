@@ -21,6 +21,6 @@ export async function fetchUserPosts(userId) {
     if (posts.length === 0) {
         return { count: 0, message: `Usuario ${userId} no tiene posts.` };
     } else {
-        return { count: posts.length, message: `Se encontraron ${posts.length} posts.` };
+        return { count: posts.length, message: `Se encontraron ${posts.length} posts.`, posts };
     }
 }

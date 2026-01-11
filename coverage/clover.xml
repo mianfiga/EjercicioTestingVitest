@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1768171131344" clover="3.2.0">
+  <project timestamp="1768171131344" name="All files">
+    <metrics statements="28" coveredstatements="28" conditionals="21" coveredconditionals="19" methods="8" coveredmethods="8" elements="57" coveredelements="55" complexity="0" loc="28" ncloc="28" packages="2" files="3" classes="3"/>
+    <package name="components">
+      <metrics statements="13" coveredstatements="13" conditionals="10" coveredconditionals="8" methods="6" coveredmethods="6"/>
+      <file name="Counter.jsx" path="/home/mafg/alumno/EjercicioTestingVitest/src/components/Counter.jsx">
+        <metrics statements="13" coveredstatements="13" conditionals="10" coveredconditionals="8" methods="6" coveredmethods="6"/>
+        <line num="5" count="21" type="stmt"/>
+        <line num="6" count="21" type="stmt"/>
+        <line num="8" count="21" type="stmt"/>
+        <line num="9" count="12" type="cond" truecount="1" falsecount="1"/>
+        <line num="10" count="12" type="stmt"/>
+        <line num="14" count="21" type="stmt"/>
+        <line num="15" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="20" count="21" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="25" count="21" type="stmt"/>
+        <line num="26" count="21" type="stmt"/>
+        <line num="28" count="21" type="stmt"/>
+      </file>
+    </package>
+    <package name="utils">
+      <metrics statements="15" coveredstatements="15" conditionals="11" coveredconditionals="11" methods="2" coveredmethods="2"/>
+      <file name="DataValidator.js" path="/home/mafg/alumno/EjercicioTestingVitest/src/utils/DataValidator.js">
+        <metrics statements="4" coveredstatements="4" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1"/>
+        <line num="2" count="8" type="cond" truecount="5" falsecount="0"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
+      </file>
+      <file name="fetchUserPosts.js" path="/home/mafg/alumno/EjercicioTestingVitest/src/utils/fetchUserPosts.js">
+        <metrics statements="11" coveredstatements="11" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="6" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="11" count="5" type="stmt"/>
+        <line num="13" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="18" count="4" type="stmt"/>
+        <line num="19" count="4" type="stmt"/>
+        <line num="21" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="24" count="3" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
