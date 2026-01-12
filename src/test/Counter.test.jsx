@@ -35,7 +35,15 @@ describe("Counter Component", () => {
   });
 
   // --- TEST 3: Límite Mínimo (Caso Borde) ---
-  it("debe mostrar la advertencia de límite mínimo al iniciar y no permitir decrementar", async () => {});
+  it("debe mostrar la advertencia de límite mínimo al iniciar y no permitir decrementar", async () => {
+    // ARRANGE
+    render(<Counter />);
+
+    // ASSERT
+    expect(screen.getByTestId("min-warning")).toHaveTextContent(
+      "Límite Mínimo alcanzado."
+    );
+  });
 
   // --- TEST 4: Decremento básico ---
   it("debe decrementar el contador en 1 al hacer clic", async () => {
@@ -52,7 +60,7 @@ describe("Counter Component", () => {
   });
 
   // --- TEST 5: Límite Máximo ---
-  it("Al llegar al límite máximo no debe seguir incrementando", async () => {
+  it("Al llegar al límite máximo no debe seguir incrementando y debe mostrar el texto de alerta", async () => {
     // ARRANGE
     const MAX_VALUE = 5;
     render(<Counter maxValue={MAX_VALUE} />);
@@ -66,6 +74,10 @@ describe("Counter Component", () => {
     // ASSERT
     expect(screen.getByTestId("current-count")).toHaveTextContent(
       `${MAX_VALUE}`
+    );
+
+    expect(screen.getByTestId("max-warning")).toHaveTextContent(
+      "Límite Máximo alcanzado."
     );
   });
 
